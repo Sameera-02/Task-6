@@ -1,0 +1,46 @@
+Part 3: Find the culprits and nail them — debugging javascript
+
+1.aa = (f,s,t) => {
+ //let f,s,t;
+ console.log(f,s,t);
+ if(f>s &&f>t){
+ console.log(f)}
+ else if(s>f && s>t){
+ console.log(s)}
+ else{
+ console.log(t)}
+}
+aa(1,2,3);
+
+
+2.let n = "123";
+console.log(add(n));
+function add(n)
+{
+let sum = 0;
+for(var i=0;i<n.length;i++){
+ sum+= parseInt(n[i])
+
+ }
+ return sum;
+}
+
+
+3.const arr = [9,8,5,6,4,3,2,1];
+(function() {
+ let sum = 0;
+ for (var i = 0; i < arr.length; i++){
+ sum += arr[i];
+ }
+ console.log(sum);
+ return sum;
+})();
+
+
+4.var arr = ["guvi", "geek", "zen", "fullstack"];
+var ano = function(arro) {
+ for (var i = 0; i <= arr.length; i++) {
+ console.log(arr[i].toUpperCase() + arr[i].substr(1));
+ }
+}
+ano();
